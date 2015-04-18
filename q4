@@ -1,0 +1,41 @@
+//Luis Garcia Ulloa A01630695
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <sstream>
+using namespace std;
+
+bool isPalindrome(string x){
+string seq=x;
+string rev;
+rev = string(seq.rbegin(), seq.rend());
+if(seq == rev)
+{
+  return true;
+}
+else
+{
+  return false;
+}
+}
+int main(){
+string x;
+cout <<endl;
+cout << "This program tells you if the number given is a palindrome or not." <<endl;
+cout << endl;
+cout << endl;
+cout << "Please enter the number: ";
+cin >> x;
+cout << endl;
+cout << endl;
+if (isPalindrome(x))
+{
+  cout << x << " is a palindrome.";
+} else
+{
+  cout << x << " is not a palindrome.";
+}
+cout <<endl;
+cout <<endl;
+return 0;
+}
