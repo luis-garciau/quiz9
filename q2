@@ -1,0 +1,29 @@
+//Luis Garcia Ulloa A01630695
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+long superpower(long a, long b)
+{
+  long power = pow(a,b);
+  return power;
+}
+
+int main()
+{
+  long x,y;
+  cout << endl;
+  cout << "This program calculates the result of elevating" <<endl;
+  cout << "the first number given to the power of the" <<endl;
+  cout << "second one." << endl;
+  cout << endl;
+  cout << "Enter the first number: " <<endl;
+  cin >> a;
+  cout << endl;
+  cout << "Enter the second number: " <<endl;
+  cin >> b;
+  cout << endl;
+  cout << "The result is: " << superpower(x,y) <<endl;
+  cout << endl;
+  return 0;
+}
